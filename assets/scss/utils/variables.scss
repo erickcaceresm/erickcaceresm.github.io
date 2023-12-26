@@ -1,0 +1,19 @@
+
+// Custom properties
+:root{
+  --clr-primary: #F6343F;
+  --clr-complement:#030B16;
+  --clr-complement-two:#151B31;
+  --black-one: #212529;
+  --black-two: #1a1a1a;
+  --black-three: #2f2f38;
+  --white: #ffff;
+  // --white-two: #f6f6fa;
+  --gray-one: #949494;
+  --gray-two: #c4c4cd;
+  // --gray-five: #cacad1;
+  // --gray-six: #eaeaf2;
+
+  --widgetSize: 560px;
+  --valuesCircles: calc(var(--widgetSize) / 4);
+}

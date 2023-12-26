@@ -1,0 +1,76 @@
+
+/*-----TABS------*/
+.tab-k{
+  display: flex;
+	justify-content: center;
+}
+
+.tablinks {
+  overflow: hidden;
+  font-weight: bold;
+}
+	
+.vertical-tab{
+	// border-right: 1px solid var(--black-two);
+  width: 190px;
+}
+
+.vertical-tab button {
+	display: flex;
+	border: none;
+	border-right: 1px solid var(--black-two);
+	cursor: pointer;
+	font-size: 16px;
+  font-weight: 600;
+	padding: 16px 0;
+	transition: 0.3s;
+	width: 190px;
+}
+.vertical-tab button:hover {
+	border-right: 5px solid lightblue;
+}
+
+.vertical-tab button.active {
+	border-right: 5px solid var(--clr-primary);
+	color: var(--clr-primary);
+}
+	
+/* Style the tab content */
+.tabcontent {
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
+	box-sizing: border-box;
+	margin-left: 20px;
+	max-width: 750px;
+	padding: 20px 20px;
+	width: 100%;
+}
+.tabcontent-title{
+	color: var(--black-two);
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.tabcontent-date{
+	font-size: 14px;
+}
+.tabcontent-ul{
+	margin: 0;
+	padding: 20px 0 0 20px;
+
+	li{
+    list-style: circle;
+		line-height: 20px;
+		margin-bottom: 12px;
+	}
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+	
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}

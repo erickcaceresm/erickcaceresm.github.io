@@ -1,0 +1,143 @@
+@media screen and(max-width:360px){
+ 
+}
+@media screen and(max-width: 600px) {
+
+  :root{
+    --widgetSize: 340px;
+  }
+  .hero{
+    box-shadow: 0 -13px 0px 12px #151b31;
+    margin-top: 60px;
+  }
+  .hero-content{
+    gap: 40px;
+    padding: 2rem 0 8rem;
+  }
+  .hero-figure{
+    height: 240px;
+    width: 240px;
+  }
+  .hero-title{
+    font-size: 28px;
+    
+    strong{
+      font-size: 36px;
+    }
+  }
+  .hero-copy{
+    font-size: 16px;
+  }
+  .box-contact{
+    justify-content: center;
+  }
+
+  .tab-k{
+    flex-wrap: wrap;
+  }
+  .vertical-tab{
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+
+    button{
+      border-right: none;
+      justify-content: center;
+      min-width: 130px;
+    }
+  }
+  .vertical-tab button.active{
+    border-right: none;
+    border-bottom: 5px solid var(--clr-primary);
+  }
+  .tabcontent{
+    padding: 28px 20px 0;
+    margin-left: 0;
+  }
+  .project{
+    box-shadow: -6px 0px 0px 0px #151b31;
+    padding: 0;
+  }
+  .project:after{
+    bottom: -2px;
+  }
+  .card-project_figcaption{
+    justify-content: end;
+    opacity: 1;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    text-align: left;
+
+    p{
+      font-size: 14px;
+    }
+  }
+
+  .header-k{
+    height: 60px;
+    padding: 0px 20px;
+  }
+
+  /* navbar css for mobile start */
+  .nav-toggler{
+    display: block;
+  }
+
+  .nav-k-menu{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #444;
+    background-color: rgba(0,0,0,.75);
+    background-color: var(--clr-complement-two);
+    max-height: 100vh;
+    overflow: hidden;
+    transition: .3s;
+    height: 100vh;
+    gap: 28px;
+    right: 0;
+    top: 0;
+    transform: translateX(100vw);
+    width: min(75vw, 400px);
+  }
+
+  .nav-k-menu.open {
+    // max-height: 100vh;
+    box-shadow: -10px 0px 30px -15px rgba(2,12,27,0.7);
+    justify-content: center;
+    overflow: visible;
+    transform: translateX(0);
+    width: min(75vw, 400px);
+  }
+  body.blur{
+    overflow-y: hidden;
+  }
+
+  body.blur #content > *{
+    filter: blur(5px);
+    pointer-events: none;
+  }
+
+  .nav-k-menu_item{
+    padding: 12px 24px;
+  }
+
+  .btn-k_cv{
+    margin-top: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+
+@media screen and(min-width: 768px) {
+}
+
+@media screen and(max-width: 1024px) {
+  .container-k{
+    max-width: 1024px;
+    padding: 80px 20px;
+  }
+}
