@@ -18,7 +18,7 @@
 .vertical-tab button {
 	display: flex;
 	border: none;
-	border-right: 1px solid var(--black-two);
+	border-right: 3px solid var(--gray-two);
 	cursor: pointer;
 	font-size: 16px;
   font-weight: 600;
@@ -27,11 +27,11 @@
 	width: 190px;
 }
 .vertical-tab button:hover {
-	border-right: 5px solid lightblue;
+	border-right: 3px solid lightblue;
 }
 
 .vertical-tab button.active {
-	border-right: 5px solid var(--clr-primary);
+	border-right: 3px solid var(--clr-primary);
 	color: var(--clr-primary);
 }
 	
@@ -62,6 +62,10 @@
     list-style: circle;
 		line-height: 20px;
 		margin-bottom: 12px;
+
+		&::marker{
+			color: var(--clr-primary);
+		}
 	}
 }
 /* Fade in tabs */

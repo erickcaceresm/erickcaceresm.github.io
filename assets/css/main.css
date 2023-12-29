@@ -450,7 +450,7 @@ button:focus:not(:focus-visible) {
 .vertical-tab button {
   display: flex;
   border: none;
-  border-right: 1px solid var(--black-two);
+  border-right: 3px solid var(--gray-two);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
@@ -460,11 +460,11 @@ button:focus:not(:focus-visible) {
 }
 
 .vertical-tab button:hover {
-  border-right: 5px solid lightblue;
+  border-right: 3px solid lightblue;
 }
 
 .vertical-tab button.active {
-  border-right: 5px solid var(--clr-primary);
+  border-right: 3px solid var(--clr-primary);
   color: var(--clr-primary);
 }
 
@@ -498,6 +498,9 @@ button:focus:not(:focus-visible) {
   list-style: circle;
   line-height: 20px;
   margin-bottom: 12px;
+}
+.tabcontent-ul li::marker {
+  color: var(--clr-primary);
 }
 
 /* Fade in tabs */
@@ -704,7 +707,8 @@ button:focus:not(:focus-visible) {
   }
 
   .tabcontent {
-    padding: 28px 20px 0;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: 0;
   }
 
